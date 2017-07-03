@@ -5,6 +5,7 @@ Run Blender with a Python script in the background
 - [Command line usage example] (#command-line-usage-examples)
 - [Blender file] (#blender-file)
 - [Python script] (#python-script)
+- [Windows batch] (#windows-batch)
 
 I tried to run Blender from the command line (in background mode with no interface) to automate tasks. In this example, it renders an animation. I have only tested the usage on Windows, but I suppose it also works on Mac & Linux, as long as one uses the system-specific file separator in the path arguments (e.g. '\' for Windows or '/' for Mac, but don't take it from me :p) in the command line usage and Python script.
 
@@ -44,6 +45,9 @@ The script 'render_animation.py' took inspriation from
 https://blender.stackexchange.com/questions/6817/how-to-pass-command-line-arguments-to-a-blender-python-script and
 https://developer.blender.org/diffusion/B/browse/master/release/scripts/templates_py/background_job.py
 It reads in command line arugments in the main() function, which are then passed into the render_animation() function for specifying some animation rendering settings in Blender (see the 'Blender file' section for details).
+
+## Windows batch:
+For convenience, on the Windows platform, I packaged the command line usage into a batch file. In the batch file, I output the start time and end time of running the Blender program, into a text file called 'timer.txt', for calculating the running time of the program.
 
 Lastly, advanced users may want to check out a Python script by Mikeycal Meyers. His script uses multiple CPU cores to speed up rendering of a single animation.
 https://www.youtube.com/watch?v=rgwP5L1bICk&t=31s
