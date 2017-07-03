@@ -1,0 +1,8 @@
+Start Measure 14:52:01.20
+Stop Measure 14:52:02.03
+Start Measure 14:52:29.17
+Stop Measure 14:52:29.91
+Start Measure 14:53:24.18
+Stop Measure 14:57:01.49
+Start Measure 17:01:21.73
+Stop Measure 17:04:38.45
