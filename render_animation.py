@@ -30,12 +30,12 @@ def render_animation(input_texture_file_name_with_ext, output_video_file_name_wi
 	if input_texture_file_name_with_ext:
 		data.images["world"].filepath = "//" + input_texture_file_name_with_ext
 	else:
-		data.images["world"].filepath = "//world.3x5400x2700_2.jpg"
+		data.images["world"].filepath = "//world.3x5400x2700_1.jpg"
 		
 	if output_video_file_name_without_ext:
 		scene.render.filepath = "//" + output_video_file_name_without_ext
 	else:
-		scene.render.filepath = "//rotation_tutorial1\\orbit"
+		scene.render.filepath = "//Output\\orbit"
 		
 	if start_frame:
 		scene.frame_start = start_frame
